@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <!-- Css File -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Remix Icon -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- Page Icon -->
+    <link rel="icon" href="sticky-note.png">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="to-do">
+        <div class="heading">
+            <h2>To-Do List <img src="to-do-list.png" alt=""></h2>
+            <div class="btn">
+                <div class="change-color" data-color="#ff416c">
+                    <ul class="colors">
+                        <li data-color="#a8ff78"></li>
+                        <li data-color="#59c173"></li>
+                        <li  data-color="#fdc830"></li>
+                        <li data-color="#2980b9"></li>
+                        <li data-color="#6441a5"></li>
+                        <li class="active" data-color="#ff416c"></li>
+                    </ul>
+                </div>
+                <div class="theme">
+                    <i class="ri-sun-fill sun"></i>
+                    <i class="ri-moon-clear-fill moon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="add-task">
+            <input type="text" placeholder="Add Your Task">
+            <button>Add Task</button>
+        </div>
+        <ul id="tasks-container">
+        </ul>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
